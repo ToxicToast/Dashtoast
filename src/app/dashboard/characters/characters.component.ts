@@ -7,7 +7,7 @@ import { NbThemeService } from '@nebular/theme';
   styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit {
-  items = ['ZûgZûg', 'BloodyToast', 'Toxictoast'];
+  items = ['ZûgZûg', 'Pewpewpaul', 'BloodyToast', 'Toxictoast'];
   constructor(private theme: NbThemeService) { }
 
   ngOnInit() {}
