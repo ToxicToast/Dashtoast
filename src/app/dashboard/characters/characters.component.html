@@ -1,12 +1,12 @@
 <nb-card size="small" *ngFor="let item of items">
-    <nb-card-header>[CLASS] [SPEC] {{ item }} | Level : 0</nb-card-header>
+    <nb-card-header>[SPEC] [CLASS] {{ item }} | Level : 0</nb-card-header>
     <nb-card-body>
         <div class="row alert">
             <div class="col-6 text-left">
                 Health Points
             </div>
             <div class="col-6 text-right healthPoints">
-                9000
+                <span class="btn btn-danger btn-tn btn-rectangle">9000</span>
             </div>
         </div>
         <div class="row alert">
@@ -14,16 +14,16 @@
                 Resource Points
             </div>
             <div class="col-6 text-right resourcePoints">
-                9000
+                <span class="btn btn-secondary btn-tn btn-rectangle">9000</span>
             </div>
         </div>
     </nb-card-body>
     <nb-card-footer>
     <div class="row">
         <div class="col-md-12">
-            <button type="button" class="btn btn-hero-primary btn-rectangle btn-tn">Edit Champion</button>
-            <button type="button" class="btn btn-hero-primary btn-rectangle btn-tn">Update Champion</button>
-            <button type="button" class="btn btn-hero-danger btn-rectangle btn-tn">Delete Champion</button>
+            <button type="button" class="btn btn-primary btn-rectangle btn-tn">Edit Champion</button>
+            <button type="button" class="btn btn-primary btn-rectangle btn-tn">Update Champion</button>
+            <button type="button" class="btn btn-danger btn-rectangle btn-tn">Delete Champion</button>
         </div>
     </div>
     </nb-card-footer>
