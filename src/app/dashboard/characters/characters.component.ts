@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'app-characters',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit {
-  constructor() { }
+  items = ['ZûgZûg', 'BloodyToast', 'Toxictoast'];
+  constructor(private theme: NbThemeService) { }
 
   ngOnInit() {}
 

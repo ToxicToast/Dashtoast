@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<nb-layout windowMode>
+    <nb-layout-header fixed>
+        <app-header>Loading Header</app-header>
+    </nb-layout-header>
+
+    <nb-layout-column class="main-content">
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+
+    <nb-layout-footer fixed>
+        app-footer
+    </nb-layout-footer>
+</nb-layout>

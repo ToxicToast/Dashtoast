@@ -1,3 +1,34 @@
-<p>
-  characters works!
-</p>
+<nb-card size="small" *ngFor="let item of items">
+    <nb-card-header>[CLASS] [SPEC] {{ item }} | Level : 0</nb-card-header>
+    <nb-card-body>
+        <div class="row alert">
+            <div class="col-lg-6 text-left">
+                Health Points
+            </div>
+            <div class="col-lg-6 text-right healthPoints">
+                9000
+            </div>
+        </div>
+        <div class="row alert">
+            <div class="col-lg-6 text-left">
+                Resource Points
+            </div>
+            <div class="col-lg-6 text-right resourcePoints">
+                9000
+            </div>
+        </div>
+    </nb-card-body>
+    <nb-card-footer>
+    <div class="row">
+        <div class="col-lg-1">
+            <button type="button" class="btn btn-hero-primary btn-rectangle btn-tn btn-with-icon">Edit Champion</button>
+        </div>
+        <div class="col-lg-1">
+            <button type="button" class="btn btn-hero-primary btn-rectangle btn-tn">Update Champion</button>
+        </div>
+        <div class="col-lg-1 offset-lg-8 right-block">
+            <button type="button" class="btn btn-hero-danger btn-rectangle btn-tn">Delete Champion</button>
+        </div>
+    </div>
+    </nb-card-footer>
+</nb-card>
